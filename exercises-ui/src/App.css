@@ -86,3 +86,31 @@
 .App-link{
   color: #dafb61;
 }
+
+body{
+  background-color: #242424;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  margin: auto;
+  padding: 2;
+}
+
+tr th{
+  border: 1px solid #dddddd;
+  color: #dddddd;
+  padding: 8px;
+}
+
+tr td{
+  border: 1px solid #dddddd;
+  color: #dddddd;
+  padding: 8px;
+}
+
+input{
+  font-family:'Courier New', Courier, monospace;
+}
+
+button{
+  font-family:'Courier New', Courier, monospace;
+}
