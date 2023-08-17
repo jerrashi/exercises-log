@@ -1,0 +1,108 @@
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+    
+{
+    "name": "bench press",
+    "reps": 10,
+    "weight": 185,
+    "unit": "lbs",
+    "date": "12-15-21"
+}
+
+###
+GET http://localhost:3000/exercises HTTP/1.1
+
+###
+GET http://localhost:3000/exercises/64dd049864c6fd7d0ef2dec8 HTTP/1.1
+
+###
+GET http://localhost:3000/exercises/?weight=185 HTTP/1.1
+
+###
+
+PUT http://localhost:3000/exercises/64cd77869b81ff49ac23ae2b HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Sorry to Bother You",
+    "year": 2018,
+    "language": "English"
+}
+
+###
+DELETE http://localhost:3000/exercises/64cd73e8aac492f364259e16 HTTP/1.1
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Eternal Sunshine Of The Spotless Mind",
+    "year": 2004,
+    "language": "English"
+}
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "title": "High Fidelity",
+    "year": 2000,
+    "language": "English"
+}
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Anchorman",
+    "year": 2004,
+    "language": "English"
+}
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "title": "No Country For Old Men",
+    "year": 2007,
+    "language": "English"
+}
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "title": "A Serious Man",
+    "year": 2009,
+    "language": "English"
+}
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "title": "City Of God",
+    "year": 2003,
+    "language": "Portuguese"
+}
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Parasite",
+    "year": 2019,
+    "language": "Korean"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "exercises-project",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "concurrently \"npm run start-rest\" \"npm run start-ui\"",
+        "start-rest": "cd exercises-rest && npm start",
+        "start-ui": "cd exercises-ui && npm start"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.0"
+    }
+}
