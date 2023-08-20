@@ -10,8 +10,9 @@ mongoose.connect(
 // Connect to to the database
 const db = mongoose.connection;
 // The open event is called when the database connection successfully opens
-db.once("open", () => {
-    console.log("Successfully connected to MongoDB using Mongoose!");
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.once('open', () => {
+    console.log('Connected to Azure Cosmos DB');
 });
 
 
