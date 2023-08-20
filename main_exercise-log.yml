@@ -27,9 +27,6 @@ jobs:
           cd client
           npm run build --if-present
           npm run test --if-present
-          cd ..
-          cd exercises-rest
-          npm start
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
