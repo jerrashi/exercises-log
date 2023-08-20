@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import * as exercises from './exercises_model.mjs';
 import express from 'express';
+const path = require('path');
 
 const PORT = process.env.PORT;
 
@@ -185,6 +186,12 @@ app.delete('/exercises/:_id', (req, res) => {
             console.error(error);
             res.status(404).send({ Error: "Not Found" });
         });
+});
+
+//Production script
+app.use(express.static("./client/build"));
+app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
 });
 
 app.listen(PORT, () => {

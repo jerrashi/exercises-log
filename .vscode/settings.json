@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/be25e57d-25b1-445b-bda9-48248ee65f11/resourceGroups/appsvc_linux_centralus_premium/providers/Microsoft.Web/sites/exercise-log",
+    "appService.deploySubpath": "."
+}

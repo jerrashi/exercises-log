@@ -1,0 +1,9 @@
+1. create resource group - done
+2. create app service - done
+3. create github repo - done
+4. connect github to azure - done?
+5. write mini script for production in server.js - done
+6. change baseUrl
+7. build client static files
+8. push code to github
+9., set up env variables in azure
